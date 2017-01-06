@@ -55,12 +55,11 @@
   content: "\e900";
 }
 .fncp-money-1:before {
-  content: "\e901";
+  content: "\e902";
 }
 .fncp-statistics:before {
-  content: "\e902";
+  content: "\e901";
 }
 .fncp-two:before {
   content: "\e903";
 }
-

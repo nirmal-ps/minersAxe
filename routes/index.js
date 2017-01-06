@@ -8,5 +8,8 @@ router.get('/', function(req, res, next) {
 router.get("/about",function(req,res,next){
   res.render('about.html')
 })
+router.post("/queries",function(req,res,next){
+  console.log("reached");
+})
 
 module.exports = router;
