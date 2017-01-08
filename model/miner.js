@@ -1,8 +1,8 @@
 "use strict"
 const db = require('../config/db')
 class Miner {
-  static insertReview(username,carrier,state,cb){
-   db.query("INSERT INTO credential_storage (agent_username ,carrier,flag)VALUES(?,?,?);" ,[username,carrier,0],cb)
+  static insertReview(name ,email,phone,subject,query,cb){
+   db.query("INSERT INTO queries (name ,email,phone,subject,query)VALUES(?,?,?,?,?);" ,[name ,email,phone,subject,query],cb)
  }
 }
 module.exports = Miner;
