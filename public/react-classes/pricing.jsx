@@ -17,7 +17,6 @@ etherium(){
   this.setState({action:"etherium",box1:0,box2:0,box3:1,box4:0});
 },
 x11(){
-
   this.setState({action:"x11",box1:0,box2:0,box3:0,box4:1});
 },
 mouseEnterBox1(){
@@ -54,9 +53,7 @@ render(){
            };
            var x11Style = {
                   background:"#46b9e3",
-                  color: "#fff"
-              };
-
+                  color: "#fff"}
             if(this.state.box1 == 1)
             { bitStyle['background'] = '#c4d114'
               bitStyle['color'] = '#171717'}
@@ -68,55 +65,43 @@ render(){
             if(this.state.box3 == 1){
               etheriumStyle['background'] = '#c4d114'
               etheriumStyle['color']='#171717'
-            }
-            if(this.state.box4 == 1){
+           }
+          if(this.state.box4 == 1){
               x11Style['background'] = '#c4d114'
+
               x11Style['color']='#171717'
             }
             var box1Style = {
-                   padding: "25px",
+                  backgroundColor: "white"
 
                }
                var box2Style = {
-                      padding: "25px"
+                      backgroundColor: "white"
                   }
                   var box3Style = {
-                         padding: "25px"
+                      backgroundColor: "white"
                      }
-                  if(this.state.mbox1 == 1){
 
-
-                      box1Style['padding']= "40px"
-
-                  }
-                  if(this.state.mbox2 == 1)
-                      box2Style['padding']= "40px"
-                  if(this.state.mbox3 == 1 & this.state.action == "bitcoin")
-                        box3Style['padding']= "32px"
-                    else if (this.state.mbox3 == 1) {
-                      box3Style['padding']= "40px"
-                    }
 
 
   switch (this.state.action) {
 
     case "bitcoin":
                 return(
-                  <div>
-                     <table>
+                  <div id = "table">
+                     <table >
                        <thead>
                        <tr>
-                           <th><tab2></tab2><button  id="butbit" style={bitStyle} onClick={this.bitcoin} >Bitcoin mining</button></th><tab1></tab1>
-                           <th><tab2></tab2><button class="zcash" id="butbit" style={zcashStyle} onClick={this.zcash} >zcash mining</button></th><tab1></tab1>
-                           <th><tab2></tab2><button class="etherium" id="butbit" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th><tab1></tab1>
-                           <th><tab2></tab2><button class="x11" id="butbit" style={x11Style} onClick={this.x11}>x11 mining</button></th>
+                           <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin} >Bitcoin mining</button></th>
+                           <th><tab4></tab4><button className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash} >zcash mining</button></th>
+                           <th><tab4></tab4><button className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th>
+                           <th><tab1></tab1><button className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
                        </tr>
                      </thead>
                      <tbody>
                        <tr>
-                            <td><div id="box" style={box1Style} onMouseEnter={this.mouseEnterBox1} onMouseLeave={this.mouseExitBox}>
+                            <td><br></br><div className="box1 hvr-sink" >
                                     <h2>Gold</h2>
-
                                     <p>starter</p>
                                     <br></br>
                                         <h1>$30</h1>
@@ -126,9 +111,9 @@ render(){
                                     <p>Bitcoin mining lifetime contract</p>
                                     <p>Has maintenance fee</p>
                                      <br></br>
-                                    <button id="smallbut"  id="smallbut">purchase plan</button>
-                                </div></td><tab1></tab1>
-                              <td><div id="box" style={box2Style} onMouseEnter={this.mouseEnterBox2} onMouseLeave={this.mouseExitBox}>
+                                    <button data-animation="animated fadeInLeft"  className="thm-button1">purchase plan</button>
+                                </div></td>
+                              <td><br></br><div className="box1 hvr-sink">
                                     <h2>Platinum</h2>
                                     <p>Best Buy</p>
                                      <br></br>
@@ -139,9 +124,9 @@ render(){
                                     <p>Bitcoin mining lifetime contract</p>
                                     <p>Has maintenance fee</p>
                                     <br></br>
-                                    <button id="smallbut"  >purchase plan</button>
-                                </div></td><tab1></tab1>
-                              <td><div id="box" style={box3Style} onMouseEnter={this.mouseEnterBox3} onMouseLeave={this.mouseExitBox}>
+                                    <button className="thm-button1"  >purchase plan</button>
+                                </div></td>
+                              <td><br></br><div className="box1 hvr-sink">
                               <h2>Diamond</h2>
                               <p>Max Profit</p>
                               <br></br>
@@ -152,9 +137,9 @@ render(){
                               <p>Bitcoin mining lifetime contract</p>
                               <p>Has maintenance fee</p>
                               <br></br>
-                              <button id="smallbut"  >purchase plan</button>
-                            </div></td><tab1></tab1>
-                            <td>
+                              <button className="thm-button1"  >purchase plan</button>
+                            </div></td>
+                            <td><br></br>
                               <Slider/>
                             </td>
                       </tr>
@@ -166,19 +151,19 @@ render(){
 
                 case "zcash":
                             return(
-                              <div>
+                              <div id = "table">
                                  <table>
                                    <thead>
                                    <tr>
-                                       <th><tab2></tab2><button  id="butbit" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th><tab1></tab1>
-                                       <th><tab2></tab2><button class="zcash" id="butbit" style={zcashStyle} onClick={this.zcash}>zcash mining</button></th><tab1></tab1>
-                                       <th><tab2></tab2><button class="etherium" id="butbit" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th><tab1></tab1>
-                                       <th><tab2></tab2><button class="x11" id="butbit" style={x11Style} onClick={this.x11}>x11 mining</button></th>
+                                       <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th>
+                                       <th><tab4></tab4><button class="zcash" className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash}>zcash mining</button></th>
+                                       <th><tab4></tab4><button class="etherium" className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th>
+                                       <th><tab1></tab1><button class="x11" className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
                                    </tr>
                                  </thead>
                                  <tbody>
                                    <tr>
-                                        <td><div id="box" style={box1Style} onMouseEnter={this.mouseEnterBox1} onMouseLeave={this.mouseExitBox}>
+                                        <td><br></br><div className="box1 hvr-sink" >
                                                 <h2>Starter</h2>
                                                 <p>starter</p>
                                                 <br></br>
@@ -189,9 +174,9 @@ render(){
                                                 <p>Zcash mining 1 year contract</p>
                                                 <p>No maintanace fee</p>
                                                 <br></br>
-                                                <button id="smallbut"  >purchase plan</button>
-                                            </div></td><tab1></tab1>
-                                          <td><div id="box" style={box2Style} onMouseEnter={this.mouseEnterBox2} onMouseLeave={this.mouseExitBox}>
+                                                <button className="thm-button1"  >purchase plan</button>
+                                            </div></td>
+                                          <td><br></br><div className="box1 hvr-sink" >
                                                 <h2>Advanced</h2>
                                                 <p>Best Buy</p>
                                                 <br></br>
@@ -202,9 +187,9 @@ render(){
                                                 <p>Zcash mining 1 year contract</p>
                                                 <p>No maintenance fee</p>
                                                 <br></br>
-                                              <button id="smallbut"  >purchase plan</button>
-                                            </div></td><tab1></tab1>
-                                          <td><div id="box" style={box3Style} onMouseEnter={this.mouseEnterBox3} onMouseLeave={this.mouseExitBox}>
+                                              <button className="thm-button1"  >purchase plan</button>
+                                            </div></td>
+                                          <td><br></br><div className="box1 hvr-sink" >
                                           <h2>Professional</h2>
                                           <p>Max Profit</p>
                                           <br></br>
@@ -215,10 +200,10 @@ render(){
 
                                           <p>Zcash mining 1 year contract</p>
                                           <p>No maintenance fee</p>
-                                          <br></br>
-                                          <button id="smallbut"  >purchase plan</button>
-                                        </div></td><tab1></tab1>
-                                        <td>
+                                            <br></br>
+                                          <button className="thm-button1"  >purchase plan</button>
+                                        </div></td>
+                                        <td><br></br>
                                           <Slider/>
                                         </td>
                                   </tr>
@@ -229,19 +214,19 @@ render(){
                             )
                 case "etherium":
                                         return(
-                                          <div>
+                                          <div id = "table">
                                              <table>
                                                <thead>
                                                <tr>
-                                                   <th><tab2></tab2><button  id="butbit" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th><tab1></tab1>
-                                                   <th><tab2></tab2><button class="zcash" style={zcashStyle} id="butbit" onClick={this.zcash}>zcash mining</button></th><tab1></tab1>
-                                                   <th><tab2></tab2><button class="etherium" style={etheriumStyle} id="butbit" onClick={this.etherium}>etherium mining</button></th><tab1></tab1>
-                                                   <th><tab2></tab2><button class="x11" id="butbit" style={x11Style} onClick={this.x11}>x11 mining</button></th>
+                                                   <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th>
+                                                   <th><tab4></tab4><button class="zcash" style={zcashStyle} className="butbit hvr-float-shadow" onClick={this.zcash}>zcash mining</button></th>
+                                                   <th><tab4></tab4><button class="etherium" style={etheriumStyle} className="butbit hvr-float-shadow" onClick={this.etherium}>etherium mining</button></th>
+                                                   <th><tab1></tab1><button class="x11" className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
                                                </tr>
                                              </thead>
                                              <tbody>
                                                <tr>
-                                                    <td><br></br><div id="box" style={box1Style} onMouseEnter={this.mouseEnterBox1} onMouseLeave={this.mouseExitBox}>
+                                                    <td><br></br><div className="box1 hvr-sink">
                                                             <h2>Small</h2>
                                                             <p>2 year Ethash contract flat rate</p>
                                                               <br></br>
@@ -252,9 +237,9 @@ render(){
                                                             <p>Ethereum  mining 1 year contract</p>
                                                             <p>No maintenance fee</p>
                                                             <br></br>
-                                                            <button id="smallbut"  >purchase plan</button>
-                                                        </div></td><tab1></tab1>
-                                                      <td><br></br><div id="box" style={box2Style} onMouseEnter={this.mouseEnterBox2} onMouseLeave={this.mouseExitBox}>
+                                                            <button className="thm-button1">purchase plan</button>
+                                                        </div></td>
+                                                      <td><br></br><div className="box1 hvr-sink">
                                                             <h2>Medium</h2>
                                                             <p>2 year Ethash contract flat rate</p>
                                                             <br></br>
@@ -265,9 +250,9 @@ render(){
                                                             <p>Ethereum mining 2 contract</p>
                                                             <p>No maintenance fee</p>
                                                             <br></br>
-                                                            <button id="smallbut"  >purchase plan</button>
-                                                        </div></td><tab1></tab1>
-                                                      <td><br></br><div id="box" style={box3Style} onMouseEnter={this.mouseEnterBox3} onMouseLeave={this.mouseExitBox}>
+                                                            <button className="thm-button1"  >purchase plan</button>
+                                                        </div></td>
+                                                      <td><br></br><div className="box1 hvr-sink">
                                                       <h2>Large</h2>
                                                       <p>2 year Ethash contract flat rate</p>
                                                       <br></br>
@@ -278,8 +263,8 @@ render(){
                                                       <p>Ethereum mining lifetime contract</p>
                                                       <p>No maintenance fee</p>
                                                       <br></br>
-                                                      <button id="smallbut"  >purchase plan</button>
-                                                    </div></td><tab1></tab1>
+                                                      <button className="thm-button1">purchase plan</button>
+                                                    </div></td>
                                                     <td>
                                                       <Slider/>
                                                     </td>
@@ -292,19 +277,19 @@ render(){
 
                 case "x11":
                                                     return(
-                                                      <div>
+                                                      <div id = "table">
                                                          <table>
                                                            <thead>
                                                            <tr>
-                                                               <th><tab2></tab2><button  id="butbit" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th><tab1></tab1>
-                                                               <th><tab2></tab2><button class="zcash" id="butbit" style={zcashStyle} onClick={this.zcash}>zcash mining</button></th><tab1></tab1>
-                                                               <th><tab2></tab2><button class="etherium" id="butbit" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th><tab1></tab1>
-                                                               <th><tab2></tab2><button class="x11" id="butbit" style={x11Style} onClick={this.x11}>x11 mining</button></th>
+                                                               <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th>
+                                                               <th><tab4></tab4><button class="zcash" className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash}>zcash mining</button></th>
+                                                               <th><tab4></tab4><button class="etherium" className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th>
+                                                               <th><tab1></tab1><button class="x11" className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
                                                            </tr>
                                                          </thead>
                                                          <tbody>
                                                            <tr>
-                                                                <td><div id="box" style={box1Style} onMouseEnter={this.mouseEnterBox1} onMouseLeave={this.mouseExitBox}>
+                                                                <td><br></br><div className="box1 hvr-sink">
                                                                         <h2>Gold</h2>
                                                                         <p>starter</p>
                                                                         <br></br>
@@ -315,9 +300,9 @@ render(){
                                                                         <p>Bitcoin mining lifetime contract</p>
                                                                         <p>Has maintenance fee</p>
                                                                         <br></br>
-                                                                        <button id="smallbut"  >purchase plan</button>
-                                                                    </div></td><tab1></tab1>
-                                                                  <td><div id="box" style={box2Style} onMouseEnter={this.mouseEnterBox2} onMouseLeave={this.mouseExitBox}>
+                                                                        <button className="thm-button1">purchase plan</button>
+                                                                    </div></td>
+                                                                  <td><br></br><div className="box1 hvr-sink">
                                                                         <h2>Platinum</h2>
                                                                         <p>Best Buy</p>
                                                                         <br></br>
@@ -329,9 +314,9 @@ render(){
                                                                         <p>Bitcoin mining lifetime contract</p>
                                                                         <p>Has maintenance fee</p>
                                                                         <br></br>
-                                                                        <button id="smallbut"  >purchase plan</button>
-                                                                    </div></td><tab1></tab1>
-                                                                  <td><div id="box" style={box3Style} onMouseEnter={this.mouseEnterBox3} onMouseLeave={this.mouseExitBox}>
+                                                                        <button className="thm-button1"  >purchase plan</button>
+                                                                    </div></td>
+                                                                  <td><br></br><div className="box1 hvr-sink">
                                                                   <h2>Diamond</h2>
                                                                   <p>Max Profit</p>
                                                                   <br></br>
@@ -341,10 +326,10 @@ render(){
                                                                       <br></br>
                                                                   <p>Bitcoin mining lifetime contract</p>
                                                                   <p>Has maintenance fee</p>
-                                                                  <br></br>
-                                                                  <button id="smallbut"  >purchase plan</button>
-                                                                </div></td><tab1></tab1>
-                                                                <td>
+                                                                    <br></br>
+                                                                  <button className="thm-button1"  >purchase plan</button>
+                                                                </div></td>
+                                                                <td><br></br>
                                                                   <Slider/>
                                                                 </td>
                                                           </tr>
@@ -367,11 +352,11 @@ var Slider = React.createClass({
   render: function() {
     return (
       <div>
-        <br></br><br></br>
-      <div id= "box1">
+
+      <div className="box1 hvr-sink">
         <h2>Custom Plan</h2>
         <p>Create a custom Bitcoin mining plan</p>
-        <br></br>
+
             <h2>${this.state.price}</h2>
             <br></br>
             <h2>{this.state.value} TH/s</h2>
@@ -386,7 +371,7 @@ var Slider = React.createClass({
        <br></br>
        <p>Use sliders or enter value</p>
        <br></br>
-       <button id="smallbut" >purchase plan</button>
+       <button className="thm-button1" >purchase plan</button>
       </div>
     </div>
   );

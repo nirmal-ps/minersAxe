@@ -12,8 +12,19 @@ router.get("/about",function(req,res,next){
 router.get("/faq",function(req,res,next){
   res.render('faq.html')
 })
+router.get("/contact",function(req,res,next){
+  res.render('contact.html')
+})
+router.get("/blog",function(req,res,next){
+  res.render('blog.html')
+})
+router.get("/coins",function(req,res,next){
+  res.render('coins.html')
+})
+
 router.post("/review",function(req,res,next){
-  console.log(req.body);
+
+
   minersaxe.insertReview(req.body.name,req.body.email,req.body.phone,req.body.subject,req.body.queries,(err,data) =>{
      res.json({done:"done"});
   })
