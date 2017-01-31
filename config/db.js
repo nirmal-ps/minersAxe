@@ -1,10 +1,10 @@
 const mysql = require('mysql')
 const database = 'minersaxe'
 const connection = mysql.createConnection({
-  host : 'b47fb12351eda7:ea878091@us-cdbr-iron-east-04.cleardb.net/heroku_7a47a6d56e42fe5?reconnect=true',
+  host : 'us-cdbr-iron-east-04.cleardb.net',
   user : 'b47fb12351eda7',
   password:'ea878091',
-  database: database
+  database: 'heroku_7a47a6d56e42fe5'
 })
 connection.connect(function(err){
   if(err){
