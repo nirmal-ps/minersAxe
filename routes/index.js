@@ -30,6 +30,10 @@ router.post("/review",function(req,res,next){
 
 
   minersaxe.insertReview(req.body.name,req.body.email,req.body.phone,req.body.subject,req.body.queries,(err,data) =>{
+     if(err)
+       console.log("haaaaaaaaaaaaaaaaaaaa");
+    console.log("myre aye");   
+
      res.json({done:"done"});
   })
 
