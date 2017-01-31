@@ -78,7 +78,7 @@ class CoinPrice extends React.Component {
                 <div className="item">
                   <div className="single-testimonial">
                     <div className="top-box">
-                      <div className="img-box"><img src="images/testi-1.png" alt=""/></div>
+                      <div className="img-box"><img src="images/logos/bitcoin logo.png" alt=""/></div>
 
                       <div className="text-box">
                         <div className="sec-title">
@@ -98,7 +98,7 @@ class CoinPrice extends React.Component {
                 <div className="item">
                   <div className="single-testimonial">
                     <div className="top-box">
-                      <div className="img-box"><img src="images/testi-1.png" alt=""/></div>
+                      <div className="img-box"><img src="images/logos/ethereum logo.png" alt=""/></div>
                       <div className="text-box">
                         <div className="sec-title">
                           <h2 className="color-white">ethereum</h2>
@@ -125,7 +125,7 @@ class CoinPrice extends React.Component {
                 <div className="item">
                   <div className="single-testimonial">
                     <div className="top-box">
-                      <div className="img-box"><img src="images/testi-1.png" alt=""/></div>
+                      <div className="img-box"><img src="images/logos/zcash logo.png" alt=""/></div>
 
                       <div className="text-box">
                         <div className="sec-title">
@@ -145,7 +145,7 @@ class CoinPrice extends React.Component {
                 <div className="item">
                   <div className="single-testimonial">
                     <div className="top-box">
-                      <div className="img-box"><img src="images/testi-1.png" alt=""/></div>
+                      <div className="img-box"><img src="images/logos/monero logo.png" alt=""/></div>
                       <div className="text-box">
                         <div className="sec-title">
                           <h2 className="color-white">monero</h2>

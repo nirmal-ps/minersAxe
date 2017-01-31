@@ -78,7 +78,7 @@ html{
     text-align: center;
     color: black;
     margin: 25px;
-    font-size: 18px;
+    font-size: 15px;
     background-color:white;
     font-family: "Open Sans", sans-serif;
 
@@ -89,6 +89,33 @@ html{
     box-shadow: 10px 10px 5px #888888;
 
 
+}
+.box1 .decor-line{
+  background: #C4D114;
+  width: 70px;
+  height: 1px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 18px;
+}
+.box1 h1{
+  font-family: "Raleway", sans-serif;
+	font-size: 40px;
+  font-weight: bold;
+	color:orange;
+	text-align: center;
+	text-transform: uppercase;
+}
+.box1 h2{
+  margin: 0;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight:bold;
+  color: grey;
+  line-height: 26px;
+  text-transform: uppercase;
+  position: relative;
+  top: -5px;
 }
 .hvr-sink {
   display: inline-block;

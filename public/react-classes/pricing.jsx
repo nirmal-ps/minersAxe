@@ -88,254 +88,341 @@ render(){
 
     case "bitcoin":
                 return(
-                  <div id = "table">
-                     <table >
-                       <thead>
-                       <tr>
-                           <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin} >Bitcoin mining</button></th>
-                           <th><tab4></tab4><button className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash} >zcash mining</button></th>
-                           <th><tab4></tab4><button className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th>
-                           <th><tab1></tab1><button className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
-                       </tr>
-                     </thead>
-                     <tbody>
-                       <tr>
-                            <td><br></br><div className="box1 hvr-sink" >
-                                    <h2>Gold</h2>
-                                    <p>starter</p>
-                                    <br></br>
-                                        <h1>$30</h1>
-                                        <br></br>
-                                        <h2>200 GH/s</h2>
-                                        <br></br>
-                                    <p>Bitcoin mining lifetime contract</p>
-                                    <p>Has maintenance fee</p>
+                  <div>
+                    <div className="thm-container">
+                      <div className = "row">
+                              <div className = "col-md-3" >
+                                  <tab4></tab4>  <button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin} >Bitcoin mining</button>
+                              </div>
+                              <div className = "col-md-3">
+                                  <tab4></tab4>   <button className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash} >zcash mining</button>
+                              </div>
+                              <div className = "col-md-3">
+                                  <tab4></tab4>     <button className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button>
+                              </div>
+                              <div class="col-md-3">
+                                <tab4></tab4><button className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button>
+                              </div>
+                      </div>
+                      <div className="row">
+                           <div className="col-md-3">
+                                      <div className="box1 hvr-sink" >
+                                            <br></br>
+                                            <h2>Gold</h2>
+                                            <p>starter</p>
+
+                                            <div className="decor-line"></div>
+                                              <h1>$30</h1>
+                                              <div className="decor-line"></div>
+                                               <br></br>
+                                               <br></br>
+                                             <h2>200 GH/s</h2>
+                                             <br></br>
+                                            <p>Bitcoin mining lifetime contract</p>
+                                            <p>Has maintenance fee</p>
+                                             <br></br>
+                                            <button data-animation="animated fadeInLeft"  className="thm-button1">purchase plan</button>
+                                        </div>
+
+                           </div>
+                           <div className="col-md-3">
+                                <div className="box1 hvr-sink">
                                      <br></br>
-                                    <button data-animation="animated fadeInLeft"  className="thm-button1">purchase plan</button>
-                                </div></td>
-                              <td><br></br><div className="box1 hvr-sink">
-                                    <h2>Platinum</h2>
-                                    <p>Best Buy</p>
+                                   <h2>Platinum</h2>
+                                   <p>Best Buy</p>
+                                    <div className="decor-line"></div>
+                                       <h1>$350</h1>
+                                       <div className="decor-line"></div>
+                                      <br></br><br></br>
+                                     <h2>2500 GH/s</h2>
+                                       <br></br>
+                                   <p>Bitcoin mining lifetime contract</p>
+                                   <p>Has maintenance fee</p>
+                                   <br></br>
+                                   <button className="thm-button1"  >purchase plan</button>
+                               </div>
+
+
+
+                           </div>
+                           <div className="col-md-3">
+                                   <div className="box1 hvr-sink">
                                      <br></br>
-                                        <h1>$350</h1>
-                                        <br></br>
-                                        <h2>2500 GH/s</h2>
-                                        <br></br>
-                                    <p>Bitcoin mining lifetime contract</p>
-                                    <p>Has maintenance fee</p>
-                                    <br></br>
-                                    <button className="thm-button1"  >purchase plan</button>
-                                </div></td>
-                              <td><br></br><div className="box1 hvr-sink">
-                              <h2>Diamond</h2>
-                              <p>Max Profit</p>
-                              <br></br>
-                                  <h1>$1950</h1>
-                                <br></br>
-                                <h2>15,000 GH/s</h2>
-                                <br></br>
-                              <p>Bitcoin mining lifetime contract</p>
-                              <p>Has maintenance fee</p>
-                              <br></br>
-                              <button className="thm-button1"  >purchase plan</button>
-                            </div></td>
-                            <td><br></br>
+                                   <h2>Diamond</h2>
+                                   <p>Max Profit</p>
+                                   <div className="decor-line"></div>
+                                       <h1>$1950</h1>
+                                     <div className="decor-line"></div>
+                                     <br></br><br></br>
+                                   <h2>15,000 GH/s</h2>
+                                     <br></br>
+                                   <p>Bitcoin mining lifetime contract</p>
+                                   <p>Has maintenance fee</p>
+                                   <br></br>
+                                   <button className="thm-button1"  >purchase plan</button>
+                                 </div>
+
+                           </div>
+                           <div className="col-md-3">
                               <Slider/>
-                            </td>
-                      </tr>
-                    </tbody>
-                     </table>
-                   </div>
+                           </div>
+                </div>
+              </div>
+              </div>
 
                 )
 
                 case "zcash":
                             return(
-                              <div id = "table">
-                                 <table>
-                                   <thead>
-                                   <tr>
-                                       <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th>
-                                       <th><tab4></tab4><button class="zcash" className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash}>zcash mining</button></th>
-                                       <th><tab4></tab4><button class="etherium" className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th>
-                                       <th><tab1></tab1><button class="x11" className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
-                                   </tr>
-                                 </thead>
-                                 <tbody>
-                                   <tr>
-                                        <td><br></br><div className="box1 hvr-sink" >
-                                                <h2>Starter</h2>
-                                                <p>starter</p>
-                                                <br></br>
-                                                    <h1>$29</h1>
+                              <div>
+                                <div className="thm-container">
+                                  <div className = "row">
+                                          <div className = "col-md-3" >
+                                              <tab4></tab4>  <button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin} >Bitcoin mining</button>
+                                          </div>
+                                          <div className = "col-md-3">
+                                              <tab4></tab4>   <button className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash} >zcash mining</button>
+                                          </div>
+                                          <div className = "col-md-3">
+                                              <tab4></tab4>     <button className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <tab4></tab4><button className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button>
+                                          </div>
+                                  </div>
+                                  <div className="row">
+                                       <div className="col-md-3">
+                                                  <div className="box1 hvr-sink" >
                                                     <br></br>
-                                                    <h2>3.12 H/s</h2>
-                                                    <br></br>
-                                                <p>Zcash mining 1 year contract</p>
-                                                <p>No maintanace fee</p>
-                                                <br></br>
-                                                <button className="thm-button1"  >purchase plan</button>
-                                            </div></td>
-                                          <td><br></br><div className="box1 hvr-sink" >
-                                                <h2>Advanced</h2>
-                                                <p>Best Buy</p>
-                                                <br></br>
-                                                    <h1>$289</h1>
-                                                    <br></br>
-                                                    <h2>31.2 H/s</h2>
-                                                    <br></br>
-                                                <p>Zcash mining 1 year contract</p>
-                                                <p>No maintenance fee</p>
-                                                <br></br>
-                                              <button className="thm-button1"  >purchase plan</button>
-                                            </div></td>
-                                          <td><br></br><div className="box1 hvr-sink" >
-                                          <h2>Professional</h2>
-                                          <p>Max Profit</p>
-                                          <br></br>
-                                              <h1>$2699</h1>
-                                              <br></br>
-                                              <h2>312 H/s</h2>
-                                              <br></br>
+                                                        <h2>Gold</h2>
+                                                        <p>starter</p>
 
-                                          <p>Zcash mining 1 year contract</p>
-                                          <p>No maintenance fee</p>
-                                            <br></br>
-                                          <button className="thm-button1"  >purchase plan</button>
-                                        </div></td>
-                                        <td><br></br>
+                                                        <div className="decor-line"></div>
+                                                          <h1>$30</h1>
+                                                          <div className="decor-line"></div>
+                                                          <br></br><br></br>
+                                                          <h2>200 GH/s</h2>
+                                                           <br></br>
+                                                        <p>Bitcoin mining lifetime contract</p>
+                                                        <p>Has maintenance fee</p>
+                                                         <br></br>
+                                                        <button data-animation="animated fadeInLeft"  className="thm-button1">purchase plan</button>
+                                                    </div>
+
+                                       </div>
+                                       <div className="col-md-3">
+                                            <div className="box1 hvr-sink">
+                                              <br></br>
+                                               <h2>Platinum</h2>
+                                               <p>Best Buy</p>
+                                                <div className="decor-line"></div>
+                                                   <h1>$350</h1>
+                                                   <div className="decor-line"></div>
+                                                   <br></br><br></br>
+                                                 <h2>2500 GH/s</h2>
+                                                   <br></br>
+                                               <p>Bitcoin mining lifetime contract</p>
+                                               <p>Has maintenance fee</p>
+                                               <br></br>
+                                               <button className="thm-button1"  >purchase plan</button>
+                                           </div>
+
+
+
+                                       </div>
+                                       <div className="col-md-3">
+                                               <div className="box1 hvr-sink">
+                                                 <br></br>
+                                               <h2>Diamond</h2>
+                                               <p>Max Profit</p>
+                                               <div className="decor-line"></div>
+                                                   <h1>$1950</h1>
+                                                 <div className="decor-line"></div>
+                                                 <br></br><br></br>
+                                               <h2>15,000 GH/s</h2>
+                                                 <br></br>
+                                               <p>Bitcoin mining lifetime contract</p>
+                                               <p>Has maintenance fee</p>
+                                               <br></br>
+                                               <button className="thm-button1"  >purchase plan</button>
+                                             </div>
+
+                                       </div>
+                                       <div className="col-md-3">
                                           <Slider/>
-                                        </td>
-                                  </tr>
-                                </tbody>
-                                 </table>
-                               </div>
+                                       </div>
+                            </div>
+                          </div>
+                          </div>
 
                             )
                 case "etherium":
                                         return(
-                                          <div id = "table">
-                                             <table>
-                                               <thead>
-                                               <tr>
-                                                   <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th>
-                                                   <th><tab4></tab4><button class="zcash" style={zcashStyle} className="butbit hvr-float-shadow" onClick={this.zcash}>zcash mining</button></th>
-                                                   <th><tab4></tab4><button class="etherium" style={etheriumStyle} className="butbit hvr-float-shadow" onClick={this.etherium}>etherium mining</button></th>
-                                                   <th><tab1></tab1><button class="x11" className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
-                                               </tr>
-                                             </thead>
-                                             <tbody>
-                                               <tr>
-                                                    <td><br></br><div className="box1 hvr-sink">
-                                                            <h2>Small</h2>
-                                                            <p>2 year Ethash contract flat rate</p>
-                                                              <br></br>
-                                                              <h1>$33</h1>
-                                                              <br></br>
-                                                                <h2>1 MH/s</h2>
+                                          <div>
+                                            <div className="thm-container">
+                                              <div className = "row">
+                                                      <div className = "col-md-3" >
+                                                          <tab4></tab4>  <button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin} >Bitcoin mining</button>
+                                                      </div>
+                                                      <div className = "col-md-3">
+                                                          <tab4></tab4>   <button className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash} >zcash mining</button>
+                                                      </div>
+                                                      <div className = "col-md-3">
+                                                          <tab4></tab4>     <button className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button>
+                                                      </div>
+                                                      <div class="col-md-3">
+                                                        <tab4></tab4><button className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button>
+                                                      </div>
+                                              </div>
+                                              <div className="row">
+                                                   <div className="col-md-3">
+                                                              <div className="box1 hvr-sink" >
                                                                 <br></br>
-                                                            <p>Ethereum  mining 1 year contract</p>
-                                                            <p>No maintenance fee</p>
-                                                            <br></br>
-                                                            <button className="thm-button1">purchase plan</button>
-                                                        </div></td>
-                                                      <td><br></br><div className="box1 hvr-sink">
-                                                            <h2>Medium</h2>
-                                                            <p>2 year Ethash contract flat rate</p>
-                                                            <br></br>
-                                                              <h1>$930</h1>
-                                                              <br></br>
-                                                                <h2>30 MH/s</h2>
-                                                                <br></br>
-                                                            <p>Ethereum mining 2 contract</p>
-                                                            <p>No maintenance fee</p>
-                                                            <br></br>
-                                                            <button className="thm-button1"  >purchase plan</button>
-                                                        </div></td>
-                                                      <td><br></br><div className="box1 hvr-sink">
-                                                      <h2>Large</h2>
-                                                      <p>2 year Ethash contract flat rate</p>
-                                                      <br></br>
-                                                          <h1>$2900</h1>
+                                                                    <h2>Gold</h2>
+                                                                    <p>starter</p>
+
+                                                                    <div className="decor-line"></div>
+                                                                      <h1>$30</h1>
+                                                                      <div className="decor-line"></div>
+                                                                      <br></br><br></br>
+                                                                      <h2>200 GH/s</h2>
+                                                                        <br></br>
+                                                                    <p>Bitcoin mining lifetime contract</p>
+                                                                    <p>Has maintenance fee</p>
+                                                                     <br></br>
+                                                                    <button data-animation="animated fadeInLeft"  className="thm-button1">purchase plan</button>
+                                                                </div>
+
+                                                   </div>
+                                                   <div className="col-md-3">
+                                                        <div className="box1 hvr-sink">
                                                           <br></br>
-                                                          <h2>100 MH/s</h2>
-                                                          <br></br>
-                                                      <p>Ethereum mining lifetime contract</p>
-                                                      <p>No maintenance fee</p>
-                                                      <br></br>
-                                                      <button className="thm-button1">purchase plan</button>
-                                                    </div></td>
-                                                    <td>
+                                                           <h2>Platinum</h2>
+                                                           <p>Best Buy</p>
+                                                            <div className="decor-line"></div>
+                                                               <h1>$350</h1>
+                                                               <div className="decor-line"></div>
+                                                               <br></br><br></br>
+                                                             <h2>2500 GH/s</h2>
+                                                               <br></br>
+                                                           <p>Bitcoin mining lifetime contract</p>
+                                                           <p>Has maintenance fee</p>
+                                                           <br></br>
+                                                           <button className="thm-button1"  >purchase plan</button>
+                                                       </div>
+
+
+
+                                                   </div>
+                                                   <div className="col-md-3">
+                                                           <div className="box1 hvr-sink">
+                                                             <br></br>
+                                                           <h2>Diamond</h2>
+                                                           <p>Max Profit</p>
+                                                           <div className="decor-line"></div>
+                                                               <h1>$1950</h1>
+                                                             <div className="decor-line"></div>
+                                                             <br></br><br></br>
+                                                           <h2>15,000 GH/s</h2>
+                                                             <br></br>
+                                                           <p>Bitcoin mining lifetime contract</p>
+                                                           <p>Has maintenance fee</p>
+                                                           <br></br>
+                                                           <button className="thm-button1"  >purchase plan</button>
+                                                         </div>
+
+                                                   </div>
+                                                   <div className="col-md-3">
                                                       <Slider/>
-                                                    </td>
-                                              </tr>
-                                            </tbody>
-                                             </table>
-                                           </div>
+                                                   </div>
+                                        </div>
+                                      </div>
+                                      </div>
 
                                         )
 
                 case "x11":
                                                     return(
-                                                      <div id = "table">
-                                                         <table>
-                                                           <thead>
-                                                           <tr>
-                                                               <th><tab4></tab4><button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin}>Bitcoin mining</button></th>
-                                                               <th><tab4></tab4><button class="zcash" className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash}>zcash mining</button></th>
-                                                               <th><tab4></tab4><button class="etherium" className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button></th>
-                                                               <th><tab1></tab1><button class="x11" className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button></th>
-                                                           </tr>
-                                                         </thead>
-                                                         <tbody>
-                                                           <tr>
-                                                                <td><br></br><div className="box1 hvr-sink">
-                                                                        <h2>Gold</h2>
-                                                                        <p>starter</p>
-                                                                        <br></br>
-                                                                            <h1>$30</h1>
+                                                      <div>
+                                                        <div className="thm-container">
+                                                          <div className = "row">
+                                                                  <div className = "col-md-3" >
+                                                                      <tab4></tab4>  <button  className="butbit hvr-float-shadow" style={bitStyle} onClick={this.bitcoin} >Bitcoin mining</button>
+                                                                  </div>
+                                                                  <div className = "col-md-3">
+                                                                      <tab4></tab4>   <button className="butbit hvr-float-shadow" style={zcashStyle} onClick={this.zcash} >zcash mining</button>
+                                                                  </div>
+                                                                  <div className = "col-md-3">
+                                                                      <tab4></tab4>     <button className="butbit hvr-float-shadow" style={etheriumStyle} onClick={this.etherium}>etherium mining</button>
+                                                                  </div>
+                                                                  <div class="col-md-3">
+                                                                    <tab4></tab4><button className="butbit hvr-float-shadow" style={x11Style} onClick={this.x11}>x11 mining</button>
+                                                                  </div>
+                                                          </div>
+                                                          <div className="row">
+                                                               <div className="col-md-3">
+                                                                          <div className="box1 hvr-sink" >
                                                                             <br></br>
-                                                                            <h2>200 GH/s</h2>
-                                                                            <br></br>
-                                                                        <p>Bitcoin mining lifetime contract</p>
-                                                                        <p>Has maintenance fee</p>
-                                                                        <br></br>
-                                                                        <button className="thm-button1">purchase plan</button>
-                                                                    </div></td>
-                                                                  <td><br></br><div className="box1 hvr-sink">
-                                                                        <h2>Platinum</h2>
-                                                                        <p>Best Buy</p>
-                                                                        <br></br>
-                                                                            <h1>$350</h1>
-                                                                            <br></br>
+                                                                                <h2>Gold</h2>
+                                                                                <p>starter</p>
 
-                                                                            <h2>2500 GH/s</h2>
-                                                                            <br></br>
-                                                                        <p>Bitcoin mining lifetime contract</p>
-                                                                        <p>Has maintenance fee</p>
-                                                                        <br></br>
-                                                                        <button className="thm-button1"  >purchase plan</button>
-                                                                    </div></td>
-                                                                  <td><br></br><div className="box1 hvr-sink">
-                                                                  <h2>Diamond</h2>
-                                                                  <p>Max Profit</p>
-                                                                  <br></br>
-                                                                      <h1>$1950</h1>
+                                                                                <div className="decor-line"></div>
+                                                                                  <h1>$30</h1>
+                                                                                  <div className="decor-line"></div>
+                                                                                  <br></br><br></br>
+                                                                                  <h2>200 GH/s</h2>
+                                                                                   <br></br>
+                                                                                <p>Bitcoin mining lifetime contract</p>
+                                                                                <p>Has maintenance fee</p>
+                                                                                 <br></br>
+                                                                                <button data-animation="animated fadeInLeft"  className="thm-button1">purchase plan</button>
+                                                                            </div>
+
+                                                               </div>
+                                                               <div className="col-md-3">
+                                                                    <div className="box1 hvr-sink">
                                                                       <br></br>
-                                                                      <h2>15,000 GH/s</h2>
-                                                                      <br></br>
-                                                                  <p>Bitcoin mining lifetime contract</p>
-                                                                  <p>Has maintenance fee</p>
-                                                                    <br></br>
-                                                                  <button className="thm-button1"  >purchase plan</button>
-                                                                </div></td>
-                                                                <td><br></br>
+                                                                       <h2>Platinum</h2>
+                                                                       <p>Best Buy</p>
+                                                                        <div className="decor-line"></div>
+                                                                           <h1>$350</h1>
+                                                                           <div className="decor-line"></div>
+                                                                           <br></br><br></br>
+                                                                         <h2>2500 GH/s</h2>
+                                                                           <br></br>
+                                                                       <p>Bitcoin mining lifetime contract</p>
+                                                                       <p>Has maintenance fee</p>
+                                                                       <br></br>
+                                                                       <button className="thm-button1"  >purchase plan</button>
+                                                                   </div>
+
+
+
+                                                               </div>
+                                                               <div className="col-md-3">
+                                                                       <div className="box1 hvr-sink">
+                                                                         <br></br>
+                                                                       <h2>Diamond</h2>
+                                                                       <p>Max Profit</p>
+                                                                       <div className="decor-line"></div>
+                                                                           <h1>$1950</h1>
+                                                                         <div className="decor-line"></div>
+                                                                         <br></br><br></br>
+                                                                       <h2>15,000 GH/s</h2>
+                                                                         <br></br>
+                                                                       <p>Bitcoin mining lifetime contract</p>
+                                                                       <p>Has maintenance fee</p>
+                                                                       <br></br>
+                                                                       <button className="thm-button1"  >purchase plan</button>
+                                                                     </div>
+
+                                                               </div>
+                                                               <div className="col-md-3">
                                                                   <Slider/>
-                                                                </td>
-                                                          </tr>
-                                                        </tbody>
-                                                         </table>
-                                                       </div>
+                                                               </div>
+                                                    </div>
+                                                  </div>
+                                                  </div>
 
                                                     )
 
@@ -354,12 +441,14 @@ var Slider = React.createClass({
       <div>
 
       <div className="box1 hvr-sink">
+        <br></br>
         <h2>Custom Plan</h2>
-        <p>Create a custom Bitcoin mining plan</p>
-
-            <h2>${this.state.price}</h2>
-            <br></br>
-            <h2>{this.state.value} TH/s</h2>
+        <p>Create a custom plan</p>
+          <div className="decor-line"></div>
+            <h1>${this.state.price}</h1>
+            <div className="decor-line"></div>
+          <br></br><br></br>
+          <h2>{this.state.value} TH/s</h2>
          <br></br>
         <input
          id="typeinp"

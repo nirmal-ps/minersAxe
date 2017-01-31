@@ -18,6 +18,10 @@ router.get("/contact",function(req,res,next){
 router.get("/blog",function(req,res,next){
   res.render('blog.html')
 })
+router.get("/try",function(req,res,next){
+  res.render('try.html')
+})
+
 router.get("/coins",function(req,res,next){
   res.render('coins.html')
 })
