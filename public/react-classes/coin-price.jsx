@@ -140,8 +140,11 @@ class CoinPrice extends React.Component {
                       </div>
                     </div>
                     <div className="bottom-box">
+
                       <p>Zcash is a decentralized and open-source cryptocurrency developed by the Zcash Electric Coin Company (ZECC) that offers privacy and selective transparency of transactions.Zcash is the result of continuous efforts by developers to create cryptographic protocols that offer greater privacy.</p>
-                      <br></br><br></br>
+                    
+                    <br></br><br></br>
+
                   </div>
                   </div>
                 </div>
