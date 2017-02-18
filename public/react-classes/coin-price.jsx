@@ -59,8 +59,8 @@ class CoinPrice extends React.Component {
               }, function(status) { //error detection....
                 alert('Something went wrong.');
               });
-  
-                   
+
+
   }
 
 
@@ -90,7 +90,8 @@ class CoinPrice extends React.Component {
                       </div>
                     </div>
                     <div className="bottom-box">
-                      <p>ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+                      <p>Bitcoin is a cryptocurrency and a payment system invented by an unidentified programmer, or group of programmers, under the name of Satoshi Nakamoto.The system is peer-to-peer and transactions take place between users directly, without an intermediary. Bitcoin is the largest of its kind in terms of total market value.</p>
+                      <br></br>
                     </div>
                   </div>
                 </div>
@@ -107,8 +108,9 @@ class CoinPrice extends React.Component {
                       </div>
                     </div>
                     <div className="bottom-box">
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-                    </div>
+                      <p>Ethereum is an open source public blockchain-based distributed computing platform, featuring smart contract functionality.The Ethereum software project was initially developed in early 2014 by a Swiss company, Ethereum Switzerland GmbH (EthSuisse). </p>
+
+                  </div>
                   </div>
                 </div>
 
@@ -118,8 +120,9 @@ class CoinPrice extends React.Component {
             </div>
             <div className="col-md-6">
               <div className="sec-title">
-                <h2 className="color-white"><tab7></tab7></h2>
-                <div className="decor-line"></div>
+                <h2 className="color-white"></h2>
+                <br></br>
+                <br></br>
               </div>
               <div className="testi-carousel owl-theme ">
                 <div className="item">
@@ -137,8 +140,12 @@ class CoinPrice extends React.Component {
                       </div>
                     </div>
                     <div className="bottom-box">
-                      <p>ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
-                    </div>
+
+                      <p>Zcash is a decentralized and open-source cryptocurrency developed by the Zcash Electric Coin Company (ZECC) that offers privacy and selective transparency of transactions.Zcash is the result of continuous efforts by developers to create cryptographic protocols that offer greater privacy.</p>
+                    
+                    <br></br><br></br>
+
+                  </div>
                   </div>
                 </div>
 
@@ -154,7 +161,7 @@ class CoinPrice extends React.Component {
                       </div>
                     </div>
                     <div className="bottom-box">
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                      <p>Monero (XMR) is an open-source cryptocurrency created in April 2014 that focuses on privacy, decentralisation and scalability. Monero experienced rapid growth in market capitalization (from US$5M to US$185M) and transaction volume during the year 2016, partly due to adoption by major darknet market AlphaBay at the end of summer 2016.</p>
                     </div>
                   </div>
                 </div>
