@@ -4,11 +4,12 @@ class CoinPrice extends React.Component {
 
   }
 
-  componentDidMount() {
+  componentWillMount() {
     function getJSON(url) {
         return new Promise(function(resolve, reject) {
           var xhr = new XMLHttpRequest();
           xhr.open('get', url, true);
+          xhr.withCredentials = false;
           xhr.responseType = 'json';
           xhr.onload = function() {
             var status = xhr.status;
@@ -28,6 +29,7 @@ class CoinPrice extends React.Component {
 
 
       getJSON(urlBit).then(function(data) {
+        dconsole.log(data)
         var div = document.getElementById('bitcoinPrice')
 
         div.innerHTML= "$"+Math.round(data[0].price_usd * 100) / 100
@@ -36,6 +38,7 @@ class CoinPrice extends React.Component {
           alert('Something went wrong.');
         });
         getJSON(urlEthe).then(function(data) {
+          dconsole.log(data)
           var div = document.getElementById('ethePrice')
 
           div.innerHTML="$"+Math.round(data[0].price_usd * 100) / 100

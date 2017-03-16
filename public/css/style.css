@@ -397,7 +397,7 @@ a:focus {
     padding: 0 20px;
 }
 .header .header-right-info ul li .single-header-right-info .icon-box i {
-    color: #C4D114;
+    color: #00AAC4;
     font-size: 30px;
 }
 .header .header-right-info ul li .single-header-right-info .text-box p {
@@ -461,7 +461,7 @@ a:focus {
 #main-navigation-wrapper.navbar-default .navbar-nav > .open > a:hover,
 #main-navigation-wrapper.navbar-default .navbar-nav > li:hover > a {
     background: none;
-    color: #C4D114;
+    color: #00AAC4;
 }
 #main-navigation-wrapper .navbar-form {
     background: #000;
@@ -2584,8 +2584,8 @@ a:focus {
     font-size: 12px;
 }
 .footer .social li a:hover {
-    color: #C4D114;
-    border-color: #C4D114;
+    color: #00AAC4;
+    border-color: #00AAC4;
 }
 .footer .subscribe-widget input {
     width: 100%;
@@ -3037,7 +3037,7 @@ a:focus {
     margin-left: -4px;
 }
 .single-project-item .img-holder .overlay ul.button li a:hover {
-    background: #7FA409;
+    background: #00AAC4;
     color: #fff;
 }
 .single-project-item h3,
@@ -3254,7 +3254,7 @@ a.loadmore:hover {
     transition: color .3s ease;
 }
 .single-sidebar-widget .post-widget ul li .text-box h3 a:hover {
-    color: #C4D114;
+    color: #00AAC4;
 }
 .single-sidebar-widget .post-widget ul li .text-box span {
     color: #1CBAC8;
@@ -3312,8 +3312,8 @@ a.loadmore:hover {
     transition: all .4s ease;
 }
 .single-sidebar-widget .tags-widget ul li a:hover {
-    background: #DAE456;
-    border-color: #DAE456;
+    background: #00AAC4;
+    border-color: #00AAC4;
     color: #2D2D2D;
 }
 .single-sidebar-widget .single-service-list-widget ul {
@@ -3349,12 +3349,12 @@ a.loadmore:hover {
     right: 20px;
 }
 .single-sidebar-widget .single-service-list-widget ul li a:hover {
-    border-left-color: #CBD913 !important;
+    border-left-color: #00AAC4 !important;
     color: #403C56;
     font-weight: bold;
 }
 .single-sidebar-widget .single-service-list-widget ul li.active a {
-    border-left-color: #CBD913 !important;
+    border-left-color: #00AAC4 !important;
     color: #403C56;
     font-weight: bold;
 }
