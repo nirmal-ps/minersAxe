@@ -414,7 +414,7 @@ render(){
                                                                            <h1>$1900</h1>
                                                                          <div className="decor-line"></div>
                                                                          <br></br><br></br>
-                                                                       <h2>10,000 H/s</h2>
+                                                                       <h2>1,000 H/s</h2>
                                                                          <br></br>
                                                                        <p>Bitcoin mining lifetime contract</p>
                                                                        <p>Has maintenance fee</p>
