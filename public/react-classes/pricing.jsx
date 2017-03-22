@@ -108,7 +108,7 @@ render(){
                       </div>
                       <br></br>
                       <div className="row">
-                           <div className="col-md-3">
+                            <div className="col-md-3">
                                       <div className="box1 hvr-sink" >
                                             <br></br>
                                             <h2>Gold</h2>
@@ -124,7 +124,7 @@ render(){
                                             <p>Bitcoin mining lifetime contract</p>
                                             <p>Has maintenance fee</p>
                                              <br></br>
-                                            <button data-animation="animated fadeInLeft"  className="thm-button1">pre-order</button>
+                                            <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                         </div>
 
                            </div>
@@ -142,7 +142,7 @@ render(){
                                    <p>Bitcoin mining lifetime contract</p>
                                    <p>Has maintenance fee</p>
                                    <br></br>
-                                   <button className="thm-button1"  >pre-order</button>
+                                   <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                </div>
 
 
@@ -162,7 +162,7 @@ render(){
                                    <p>Bitcoin mining lifetime contract</p>
                                    <p>Has maintenance fee</p>
                                    <br></br>
-                                   <button className="thm-button1"  >pre-order</button>
+                                   <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                  </div>
 
                            </div>
@@ -210,7 +210,7 @@ render(){
                                                         <p>Bitcoin mining lifetime contract</p>
                                                         <p>Has maintenance fee</p>
                                                          <br></br>
-                                                        <button data-animation="animated fadeInLeft"  className="thm-button1">pre-order</button>
+                                                        <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                                     </div>
 
                                        </div>
@@ -228,7 +228,7 @@ render(){
                                                <p>Bitcoin mining lifetime contract</p>
                                                <p>Has maintenance fee</p>
                                                <br></br>
-                                               <button className="thm-button1"  >pre-order</button>
+                                               <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                            </div>
 
 
@@ -248,7 +248,7 @@ render(){
                                                <p>Bitcoin mining lifetime contract</p>
                                                <p>Has maintenance fee</p>
                                                <br></br>
-                                               <button className="thm-button1"  >pre-order</button>
+                                               <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                              </div>
 
                                        </div>
@@ -295,7 +295,7 @@ render(){
                                                                     <p>Bitcoin mining lifetime contract</p>
                                                                     <p>Has maintenance fee</p>
                                                                      <br></br>
-                                                                    <button data-animation="animated fadeInLeft"  className="thm-button1">pre-order</button>
+                                                                    <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                                                 </div>
 
                                                    </div>
@@ -313,7 +313,7 @@ render(){
                                                            <p>Bitcoin mining lifetime contract</p>
                                                            <p>Has maintenance fee</p>
                                                            <br></br>
-                                                           <button className="thm-button1"  >pre-order</button>
+                                                           <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                                        </div>
 
 
@@ -333,7 +333,7 @@ render(){
                                                            <p>Bitcoin mining lifetime contract</p>
                                                            <p>Has maintenance fee</p>
                                                            <br></br>
-                                                           <button className="thm-button1"  >pre-order</button>
+                                                           <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                                          </div>
 
                                                    </div>
@@ -381,7 +381,7 @@ render(){
                                                                                 <p>Bitcoin mining lifetime contract</p>
                                                                                 <p>Has maintenance fee</p>
                                                                                  <br></br>
-                                                                                <button data-animation="animated fadeInLeft"  className="thm-button1">pre-order</button>
+                                                                                <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                                                             </div>
 
                                                                </div>
@@ -399,7 +399,7 @@ render(){
                                                                        <p>Bitcoin mining lifetime contract</p>
                                                                        <p>Has maintenance fee</p>
                                                                        <br></br>
-                                                                       <button className="thm-button1"  >pre-order</button>
+                                                                       <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                                                    </div>
 
 
@@ -419,7 +419,7 @@ render(){
                                                                        <p>Bitcoin mining lifetime contract</p>
                                                                        <p>Has maintenance fee</p>
                                                                        <br></br>
-                                                                       <button className="thm-button1"  >pre-order</button>
+                                                                       <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
                                                                      </div>
 
                                                                </div>
@@ -500,7 +500,7 @@ class CustomPlan extends React.Component{
        <p>Use sliders or enter value</p>
 
        <br></br>
-       <button className="thm-button1" >pre-order</button>
+    <a href="/contact" data-animation="animated fadeInLeft"  className="thm-button1">pre-order</a>
       </div>
     </div>
   );

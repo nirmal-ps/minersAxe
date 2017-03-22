@@ -5877,7 +5877,7 @@ section.profile-question
 .butbit {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
-
+   min-width: 12rem;
   text-align: center;
   border-radius: 3px;
   display: inline-block;
@@ -5943,6 +5943,7 @@ section.profile-question
 
 #butbit {
   font-size: 15px;
+  min-width: 12rem;
   font-family: "Open Sans", sans-serif;
 
   text-align: center;
