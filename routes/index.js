@@ -31,37 +31,28 @@ router.post("/externalMail",function(req,res,next){
   // minersaxe.insertReview(req.body.name,req.body.email,req.body.phone,req.body.subject,req.body.queries,(err,data) =>{
   //       res.json({done:"done"});
   // })
-  var smtpConfig = {
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true, // use SSL
-    auth: {
-        user: 'minersaxeofficial@gmail.com',
-        pass: 'minersaxe@12'
-    }
+ var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'way2nirmalps@gmail.com',
+    pass: 'nimmu9388222623'
+  }
+});
+
+var mailOptions = {
+  from: req.body.from,
+  to: req.body.to,
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
 };
 
-
-    var transporter = nodemailer.createTransport(smtpConfig);
-    var text = 'Hi'
-    console.log("haaaaaaaaaaaaaaaa",text)
-    var mailOptions = {
-        from: req.body.from, // sender address
-        to: req.body.to, // list of receivers
-        subject: 'Contact message', // Subject line
-        text: text //, // plaintext body
-        // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
-    }
-    transporter.sendMail(mailOptions, function(error, info){
-        if(error){
-            console.log(error);
-            res.json({yo: 'error'});
-        }else{
-            console.log('Message sent: ' + info.response);
-            res.json({yo: info.response});
-        };
-    });
-
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
 })
 router.post("/review",function(req,res,next){
   console.log("haaaaaaaaaaaaaaaa")
